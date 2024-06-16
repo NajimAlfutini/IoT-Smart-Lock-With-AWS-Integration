@@ -22,3 +22,6 @@ Developed as a senior project for a Computer Engineering program, this project d
 - Author 1: [Link to Author 1's GitHub profile](https://github.com/NajimAlfutini)
 - Author 2: [Link to Author 2's GitHub profile](https://github.com/WaleedSaleh2i)
 - Author 3: [Link to Author 3's GitHub profile](https://github.com/Maged001)
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](#license-md) file for details.
