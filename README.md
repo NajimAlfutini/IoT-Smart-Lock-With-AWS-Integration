@@ -16,3 +16,9 @@ Developed as a senior project for a Computer Engineering program, this project d
 ## Smart Lock System Architecture Diagram
 
 ![Smart Lock System Architecture Diagram](https://github.com/NajimAlfutini/IoT-Smart-Lock-With-AWS-Integration/assets/138370248/d49993dc-950e-4014-89fc-0bb651a1bbc0)
+
+## Credits
+
+- Author 1: [Link to Author 1's GitHub profile](https://github.com/NajimAlfutini)
+- Author 2: [Link to Author 2's GitHub profile](https://github.com/WaleedSaleh2i)
+- Author 3: [Link to Author 3's GitHub profile](https://github.com/Maged001)
