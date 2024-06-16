@@ -1,0 +1,504 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: auto; /* Change this line */
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.active {
+  color: #ffffff;
+  background-color: #007BFF;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* Add this line */
+}
+
+.active:hover {
+  background-color: #0056b3;
+}
+
+
+.header {
+  background-color: #282c34;
+  min-height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.contert {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+a {
+  color: #61dafb;
+  text-decoration: none; /* Add this line */
+}
+
+
+.active {
+  color: #ffffff;
+  background-color: #61dafb;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+h5 {
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"] {
+  margin: 10px 0;
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #61dafb;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #282c34;
+}
+
+.loginForm {
+  /* Existing styles */
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.7); /* Semi-transparent white */
+
+  /* Move the form down */
+  position: absolute;
+  top: calc(50% + 50px); /* Adjust this value as needed */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h5 {
+  font-size: 24px; /* Increase the font size */
+}
+
+.usernameInput, .passwordInput {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%; /* Make the input fields take up the full width of the form */
+  height: 40px; /* Increase the height of the input fields */
+  font-size: 18px; /* Increase the font size in the input fields */
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.submitButton {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  font-size: 18px; /* Increase the font size in the submit button */
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+.message {
+  color: red;
+  font-size: 16px; /* Increase the font size of the error message */
+}
+
+
+
+.loginPage {
+  background-image: url(/build/loginBG.jpeg);
+  background-size:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+
+
+
+.smartlockTitle {
+  color: #000;
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 10%; /* Adjust this value as needed */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.admin-console {
+  color: black;
+  display: ruby-base;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px; /* Add this line */
+}
+
+
+
+.status-message {
+  color: red;
+  font-weight: bold;
+}
+
+.users-table,
+.logs-table {
+  border-collapse: collapse;
+  margin: 0 auto; /* Center the table */
+  width: 80%; /* Set the width of the table */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); /* Add some shadow for a better look */
+}
+
+.users-table th,
+.logs-table th,
+.users-table td,
+.logs-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.users-table th,
+.logs-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.users-table tr:nth-child(even),
+.logs-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.users-table tr:hover,
+.logs-table tr:hover {
+  background-color: #ddd;
+}
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+button {
+  margin: 5px;
+  background-color: #4CAF50; /* Default button color */
+  color: white; /* Button text color */
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s; /* Transition effect */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #008CBA; /* Button color when mouse is over it */
+  color: white;
+}
+
+button:last-child {
+  background-color: #555555; /* Last button color */
+}
+
+button:last-child:hover {
+  background-color: blue; /* Last button color when mouse is over it */
+}
+
+.logout-button {
+  background-color: red !important; /* Logout button color */
+
+}
+
+.logout-button:hover {
+  background-color: darkred !important; /* Logout button color when mouse is over it */
+}
+.delete-button {
+  background-color: rgb(201, 41, 41) !important; /* Logout button color */
+  color: white; /* Make the icon color white */
+  border: none;
+  cursor: pointer;
+  display: flex; /* Use flexbox to center the icon */
+  justify-content: center; /* Center the icon horizontally */
+  align-items: center; /* Center the icon vertically */
+}
+
+.delete-button:hover {
+  background-color: rgb(97, 11, 11) !important; /* Logout button color when mouse is over it */
+}
+
+button, input[type="text"], input[type="password"], input[type="submit"] {
+  border-radius: 12px; /* Adjust as needed */
+}
+
+
+.status-popup {
+  position: fixed;
+  top: 10%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #4245e3;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999; /* Add this line */
+}
+
+
+input[type="datetime-local"] {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+.app-container {
+  text-align: center;
+}
+
+.nav-link.active {
+  color: #ffffff;
+  background-color: #007BFF;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-link.active:hover {
+  background-color: #0056b3;
+}
+
+.header-container {
+  background-color: #282c34;
+  min-height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.content-container {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.nav-link {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: #ffffff;
+  background-color: #61dafb;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.smartlock-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-heading {
+  text-align: center;
+}
+
+.username-input,
+.password-input {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.submit-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+}
+/* CSS */
+.stages-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the stages vertically */
+  flex-direction: column; /* Stack the stages vertically */
+  gap: 20px; /* Add some space between stages */
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 80%; /* Limit the width of each stage */
+}
+
+.stage h2 {
+  font-size: 1.5em;
+}
+
+.stage form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%; /* Make the form take up the full width of the stage */
+}
+
+.stage form input {
+  width: 100%; /* Make the inputs take up the full width of the form */
+  height: 30px;
+  padding: 0 10px; /* Add some padding inside the inputs */
+  border-color: #4CAF50;
+  border-width: 2px;
+  font: 1em sans-serif;
+}
+
+.stage .button-submit {
+  width: 400px; /* Make the button take up the full width of the form */
+  height: 60px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.2em;
+}
+
+.stage .button-submit:hover {
+  background-color: darkgreen;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #6c63ff;
+  border-radius: 5px;
+  transition: width 0.4s ease-in-out;
+  width: 0%; /* Start from zero */
+}
+
+
+.button-back, .button-undo {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 10px; /* Add some padding to the buttons */
+}
+
+.button-back {
+  bottom: 20px;
+  left: 20px;
+}
+
+.button-back:hover {
+  background-color: darkgray;
+}
+
+.button-undo {
+  top: 20px;
+  left: 20px;
+  background-color: red;
+}
+
+.button-undo:hover {
+  background-color: darkred;
+}
+.SearchName, input[type="datetime-local"] {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
