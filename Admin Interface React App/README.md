@@ -2,6 +2,8 @@
 
 This project is an IoT smart lock system with an admin interface built using React. It is designed to connect to AWS and provides functionalities for managing users, opening the lock, and viewing user data and lock logs.
 
+URL for the website: https://smartlockaws.xyz
+
 ## Features
 
 - User Management: The admin can add users to the system.
