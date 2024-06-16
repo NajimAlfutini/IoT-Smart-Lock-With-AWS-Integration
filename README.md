@@ -24,4 +24,4 @@ Developed as a senior project for a Computer Engineering program, this project d
 - Author 3: [Link to Author 3's GitHub profile](https://github.com/Maged001)
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](#license-md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
