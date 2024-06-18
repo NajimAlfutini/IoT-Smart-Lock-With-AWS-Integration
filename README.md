@@ -20,7 +20,7 @@ Developed as a senior project for a Computer Engineering program, this project d
 ## Credits
 
 - Author 1: [Link to Author 1's GitHub profile](https://github.com/NajimAlfutini)
-- Author 2: [Link to Author 2's GitHub profile](https://github.com/WaleedSaleh2i)
+- Author 2: [Link to Author 2's GitHub profile](https://github.com/WaleedSaleh2)
 - Author 3: [Link to Author 3's GitHub profile](https://github.com/Maged001)
 
 ## License
