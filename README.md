@@ -1,4 +1,4 @@
-# IoT Smart Lock with AWS Integration
+# IoT Smart Lock with AWS Integration.
 
 ## Overview
 Developed as a senior project for a Computer Engineering program, this project delivers an advanced IoT smart lock system, utilizing Amazon Web Services (AWS) for secure and scalable cloud-based management. The system's main access mechanism is a token-based authentication, issued by the admin, which specifies the date and time a user is granted access.
